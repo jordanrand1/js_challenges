@@ -28,3 +28,17 @@ $('#chopBtn').click(function(){
   output = tmp.join(' ')
   $('#output').text(output)
 })
+
+$('#newObjectBtn').click(function(){
+  name = $('#name').val()
+  age = $('#age').val()
+  email = $('#email').val()
+  new_obj = {
+    name: name,
+    age: age,
+    email: email
+  }
+  console.log(new_obj)
+  output = "Name: " + new_obj.name + " Age: " + new_obj.age + " Email: " + new_obj.email
+  $('#output').text(output)
+})
