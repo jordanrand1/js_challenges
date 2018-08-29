@@ -3,19 +3,40 @@
   <head>
     <title>JS-Challenges</title>
     <link rel='stylesheet' href='styles.css' />
-    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
-    <script src='main.js'></script>
   </head>
   <body>
     <h1>JS-Challenges</h1>
 
     <div class="row">
       <div class="input-field col s6">
-        <input placeholder="Enter Your Text" id="alphabetizeText" type="text" class="validate">
-        <label class="active" for="alphabetizeText">Your Text</label>
-        <button id="alphabetizeBtn" class="btn blue">Alphabetize!</button>
-        <div id='alphabetizeOutput'></div>
+        <input placeholder="Enter Your Text" id="alphaText" type="text" class="validate">
+        <label class="active" for="alphaText" style="font-size: 23px;">Alphabetize String</label>
+        <button id="alphaBtn" class="btn blue">Alphabetize!</button>
+      </div>
+      <div class="col s6">
+        <h2 id="output"></h2>
       </div>
     </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+        <input placeholder="Number" id="repeatNum" type="text" class="validate">
+        <label class="active" for="repeatNum" style="font-size: 23px;">Repeat Me</label>
+        <input placeholder="Text to Repeat" id="repeatText" type="text" class="validate">
+        <button id="repeatBtn" class="btn blue">Repeat!</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s6">
+          <input placeholder="Chop by (number)" id="repeatNum" type="text" class="validate">
+        <input placeholder="Enter Your Text" id="chopText" type="text" class="validate">
+        <label class="active" for="chopText" style="font-size: 23px;">Chop String</label>
+        <button id="chopBtn" class="btn blue">Chop!</button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src='main.js'></script>
   </body>
 </html>
