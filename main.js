@@ -17,3 +17,14 @@ $('#repeatBtn').click(function(){
   output = output.join('')
   $('#output').text(output)
 })
+
+$('#chopBtn').click(function(){
+  number = parseInt($('#chopNum').val())
+  text = $('#chopText').val().split(' ').join('')
+  tmp = []
+  for (i = 0; i < text.length; i += number){
+    tmp.push(text.slice(i,i+number))
+  }
+  output = tmp.join(' ')
+  $('#output').text(output)
+})
